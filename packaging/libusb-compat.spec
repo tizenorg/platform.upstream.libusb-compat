@@ -25,6 +25,7 @@ Version:        0.1.4
 Release:        2
 Source:         %{name}-%{version}.tar.gz
 source1:		libusb-compat.manifest
+Source1001: 	libusb-compat.manifest
 BuildRequires:  libtool
 BuildRequires:  pkgconfig(libusb-1.0)
 
@@ -46,6 +47,7 @@ and walk like libusb-0.1.
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 cp %{SOURCE1} .
@@ -63,11 +65,13 @@ rm %{buildroot}%{_libdir}/*.la
 %postun -p /sbin/ldconfig
 
 %files
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %doc AUTHORS COPYING ChangeLog LICENSE NEWS README
 %{_libdir}/*.so.*
 
 %files devel
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %{_bindir}/*-config
 %{_includedir}/*.h
