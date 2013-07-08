@@ -1,0 +1,9 @@
+Change-Id: I94264d6c4a28117d8b6c4f4e13eaeeb0c30595a5
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Code-Review+1: Michael Demeter <michael.demeter@intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:37:23 -0700
+Reviewed-on: https://review.tizen.org/gerrit/5192
+Project: platform/upstream/libusb-compat
+Branch: refs/heads/tizen
