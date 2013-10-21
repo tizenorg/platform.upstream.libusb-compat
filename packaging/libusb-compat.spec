@@ -19,7 +19,7 @@
 Name:           libusb-compat
 Url:            http://libusb.wiki.sourceforge.net/LibusbCompat0.1
 Summary:        libusb-1.0 Compatibility Layer for libusb-0.1
-License:        BSD-3-Clause ; LGPL-2.1+
+License:        BSD-3-Clause and LGPL-2.1+
 Group:          System/Libraries
 Version:        0.1.4
 Release:        2
@@ -36,7 +36,6 @@ and walk like libusb-0.1.
 
 %package devel
 Summary:        libusb-1.0 Compatibility Layer for libusb-0.1
-Group:          Development/Libraries/C and C++
 Requires: %{name} = %{version}-%{release}
 
 %description devel
@@ -67,8 +66,9 @@ rm %{buildroot}%{_libdir}/*.la
 %files
 %manifest %{name}.manifest
 %defattr(-,root,root)
-%doc AUTHORS COPYING ChangeLog LICENSE NEWS README
+%doc AUTHORS ChangeLog NEWS README
 %{_libdir}/*.so.*
+%license LICENSE COPYING
 
 %files devel
 %manifest %{name}.manifest
@@ -77,4 +77,3 @@ rm %{buildroot}%{_libdir}/*.la
 %{_includedir}/*.h
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
-

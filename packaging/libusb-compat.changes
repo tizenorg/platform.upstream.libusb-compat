@@ -1,0 +1,3 @@
+* Mon Oct 21 2013 Jacek Bukarewicz <j.bukarewicz@samsung.com> accepted/tizen/20130912.195513@bc9d5dc
+- Use %license for license files, rpmlint fixes
+
