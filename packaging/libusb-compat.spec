@@ -23,7 +23,7 @@ License:        BSD-3-Clause and LGPL-2.1+
 Group:          System/Libraries
 Version:        0.1.5
 Release:        2
-Source:         %{name}-%{version}.tar.gz
+Source:         %{name}-%{version}.tar.bz2
 source1:		libusb-compat.manifest
 Source1001: 	libusb-compat.manifest
 BuildRequires:  libtool
